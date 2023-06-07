@@ -18,22 +18,34 @@ public class Main {
         long end = System.currentTimeMillis();
         System.out.println(start-end);
 
-        int cores = Runtime.getRuntime().availableProcessors();
 
-        Thread thread1 = new Thread(() ->{
-            /////
-        });
-        Thread thread2 = new Thread(() ->{
-            /////
-        });
-
-        thread1.start();
-        thread2.start();
-
-        thread1.join();
-        thread2.join();
-
-        ExecutorService executorService = Executors.newFixedThreadPool()
     }
 
 }
+//        int cores = Runtime.getRuntime().availableProcessors();
+//
+//        Thread thread1 = new Thread(() ->{
+//            /////
+//        });
+//        Thread thread2 = new Thread(() ->{
+//            /////
+//        });
+//
+//        thread1.start();
+//        thread2.start();
+//
+//        thread1.join();
+//        thread2.join();
+//
+//        ExecutorService executorService = Executors.newFixedThreadPool(cores);
+//        executorService.execute(() ->{
+//            ///
+//        });
+//        executorService.execute(() ->{
+//            ///
+//        });
+//
+//        executorService.shutdown();
+//        if(executorService.isTerminated()){
+//            ///
+//        }
